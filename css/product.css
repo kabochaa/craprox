@@ -1,0 +1,168 @@
+/* brush */
+/* product top */
+.product__top {
+  width: 100%;
+  background-color: #dddddd92;
+}
+
+.product__top-bg {
+  width: 100%;
+  height: auto;
+}
+
+.product__top-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product__top-wrap div {
+  margin-top: 1em;
+}
+
+@media screen and (min-width:960px) {
+  .product__top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .product__top-wrap {
+    text-align: center;
+  }
+
+  .product__top-img {
+    display: none;
+  }
+
+  .product__top-wrap {
+    padding: 2em;
+  }
+
+}
+
+/* brush-page-feature */
+.product__h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: .5em;
+}
+
+.feature__inner {
+  display: grid;
+  width: 70%;
+  height: 80%;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  /* grid-gap: 1em; */
+}
+
+.feature__items {
+  margin: 0 auto;
+}
+
+.feature__items img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width:960px) {
+  .sp {
+    display: none;
+  }
+
+  .brush__feature-items:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .brush__feature-items:nth-child(2) {
+    margin-right: .5em;
+  }
+
+  .brush__feature-items:nth-child(3) {
+    margin-left: .5em;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .pc {
+    display: none
+  }
+
+  .feature__inner {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .feature__items {
+    width: 80%;
+  }
+}
+
+/* product-product */
+.product__inner {
+  display: grid;
+  place-items: center;
+  width: 80%;
+  margin: 0 auto;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width:960px) {
+
+  .brush__product-inner,
+  .idb__product-inner {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .product__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product__items {
+  width: 80%;
+  box-shadow: 0 0 10px 3px #dadada;
+}
+
+
+.product__items-img {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.product__items-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__items-txt {
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* idb video */
+.idb__feature-items-video {
+  width: 70%;
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width:960px) {
+  .idb__feature-items-video {
+    margin: 5em auto;
+  }
+}
+
+/* sonic */
+.sonic__feature-items {
+  box-shadow: 0 0 5px 1px #dadada;
+  margin-top: 1em;
+}

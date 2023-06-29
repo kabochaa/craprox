@@ -1,0 +1,248 @@
+/* section-top */
+.about__top-wrap {
+  position: relative;
+}
+
+.about__top-wrap img {
+  width: 100%;
+}
+
+.about__top-title {
+  display: inline-block;
+  background-color: #003da5;
+  color: #fff;
+  font-size: 1.3em;
+  /* font-weight: 500; */
+  margin: 1em;
+  padding: .5em;
+}
+
+.about__top-text {
+  background-color: #fffdfb9d;
+  color: #003da5;
+  padding: .5em;
+  line-height: 2
+}
+
+.about__top__txt-wrap {
+  position: absolute;
+  width: 37%;
+  padding: 0;
+  top: 35%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media screen and (max-width:959px) {
+
+  .about__top,
+  .about__compare {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about__top__txt-wrap {
+    position: absolute;
+    width: 85%;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+
+/* section-compare */
+.about__compare-items {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 1em;
+  grid-template-columns: 3fr 5fr 1fr 5fr 3fr;
+}
+
+.about__compare-h1-wrap,
+.about__feature-h1-wrap {
+  text-align: center;
+  margin: 1em;
+  font-size: 3em;
+  line-height: 2;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.about__compare-h1-wrap h1,
+.about__feature-h1-wrap h1 {
+  /* display: inline-block; */
+  border-bottom: .1em solid #003da5;
+}
+
+.about__compare-item img {
+  width: 100%;
+}
+
+@media screen and (max-width:959px) {
+  .about__compare-hidden {
+    display: none;
+  }
+
+  .about__compare-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* video */
+.video {
+  text-align: center;
+  margin: 2em auto;
+  box-shadow: 0 0 10px 3px #dadada;
+}
+
+.video video {
+  width: 100%;
+}
+
+.about__compare-video {
+  width: 60%;
+}
+
+@media screen and (max-width:959px) {
+  .about__compare-video {
+    width: 90%;
+  }
+}
+
+
+/* section feature */
+/* outer */
+.about__feature-wrap {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+summary {
+  display: block;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 10px 10px -5px #dadada;
+}
+
+.about__feature-outer {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  padding: 2em 0;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+
+.about__feature-outer-img img {
+  width: 100%;
+}
+
+.about__feature-outer-btn img {
+  width: 70%;
+}
+
+.about__feature-outer-txt {
+  text-align: center;
+  width: 100%;
+}
+
+.about__feature-outer-txt h2,
+.about__feature-inner-txt h2 {
+  font-size: 1.5em;
+  color: #003da5;
+}
+
+.about__feature-outer-txt div,
+.about__feature-inner-txt div {
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+details[open] .about__feature-outer-btn img {
+  transform: rotate(180deg);
+  transition: all .3s linear;
+}
+
+@media screen and (max-width:959px) {
+  .about__feature-wrap {
+    width: 100%;
+  }
+
+  .about__feature-outer-img img {
+    display: none;
+  }
+
+  .about__feature-outer {
+    grid-template-columns: 1fr;
+  }
+
+  .about__feature-outer-btn img {
+    width: 50%;
+  }
+
+  .about__feature-outer-txt h2,
+  .about__feature-inner-txt h2 {
+    font-size: 1.8em;
+    margin: 1em 0;
+    color: #003da5;
+  }
+}
+
+/* inner */
+
+/* 1つ目 */
+.about__feature-inner-img:nth-child(1) {
+  margin: 2em 0;
+}
+
+.about__feature-inner-img:nth-child(1) img {
+  width: 100%;
+}
+
+/* 2,3こ目 */
+.about__feature-inner {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0;
+}
+
+.about__feature-inner-txt {
+  width: 80%;
+}
+
+.about__feature-inner-img:nth-child(2) img {
+  width: 80%;
+}
+
+.about__feature-inner-img:nth-child(3) img {
+  width: 100%;
+}
+
+@media screen and (min-width:960px) {
+  .about__feature-outer:hover {
+    opacity: 0.6;
+    transition: all .3s;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .about__feature-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about__feature-inner-img:nth-child(2) img,
+  .about__feature-inner-img:nth-child(3) img {
+    width: 50%;
+  }
+}

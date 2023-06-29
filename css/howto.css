@@ -1,0 +1,62 @@
+.howto__h1 {
+  font-size: 3em;
+  margin: .5em;
+}
+
+.howto__sonic {
+  margin-top: 2em;
+}
+
+.video__container {
+  display: grid;
+  width: 80%;
+  height: 100%;
+  gap: 1em;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.video__wrap {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 5px #dadada;
+  margin: 0 auto;
+}
+
+.howto__video {
+  text-align: center;
+  margin: 1em;
+}
+
+.howto__video video {
+  width: 90%;
+  height: auto;
+}
+
+.howto__txt {
+  text-align: center;
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+@media screen and (min-width:960px) {
+  .video__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .howto__h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media screen and (max-width:959px) {
+  .video__container {
+    grid-template-columns: 1fr;
+  }
+
+  .video__hidden {
+    display: none;
+  }
+}
