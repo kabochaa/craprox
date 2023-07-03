@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>CRAPROX</title>
+<meta name="description"  content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+<link rel="stylesheet" href="css/front-page.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/howto.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- top movie -->
+  <div class="wrapper">
+    <div id="slider">
+      <h1 id="timeout">CRAPROX</h1>
+    </div>
+  </div>
+
+  <div id="container">
+    <!-- header -->
+    <header id="js-fixed-header" class="header is-fixed">
+      <div class="header__inner">
+        <h1 class="header__title header-title">
+          <a href="./front-page.html">
+            <img decoding="async"src="img/cpx_logo.svg" alt="">
+          </a>
+        </h1>
+  
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item">
+              <a href="./front-page.html" class="en">HOME</a>
+              <p class="ja">ホーム</p>
+            </li>
+            <li class="nav-items__item">
+              <a href="./about.html" class="en">What's CRAPROX?</a>
+              <p class="ja">クラプロックスとは？</p>
+            </li>
+            <li class="nav-items__item">
+              <a href="./toothbrush.html" class="en">TOOTHBRUSH</a>
+              <p class="ja">歯ブラシ</p>
+            </li>
+            <li class="nav-items__item">
+              <a href="./Interdental.html" class="en">INTERDENTAL</a>
+              <p class="ja">歯間ブラシ</p>
+            </li>
+            <li class="nav-items__item">
+              <a href="./sonic.html" class="en">SONIC TOOTHBRUSH</a>
+              <p class="ja">電動歯ブラシ</p>
+            </li>
+            <li class="nav-items__item">
+              <a href="./howto.html" class="en">HOW TO</a>
+              <p class="ja">使い方動画</p>
+            </li>
+          </ul>
+        </nav>
+  
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <!-- ------------------------------------------------------ -->
+
+  <main class="main">
+    <div class="front__container">
+
+    <p id="page-top"><a href="#"><span>Page Top</span></a></p>
+      
+      <!-- front about -->
+      <section class="front__about">
+        <div class="front__about-container">
+          <h1 class="h1 front__h1">ABOUT</h1>
+          <div class="front__about-wrap about__top-wrap">
+            <!-- img -->
+            <img src="img/howto_topbg.png" alt="" class="pc">
+            <img src="img/howto_topbg-sp.png" alt="" class="sp">
+            <!-- txt -->
+            <div class="front__about__txt-wrap about__top__txt-wrap">
+              <p class="front__about-title about__top-title">クラプロックスとは？</p>
+              <div class="front__about-text about__top-text">クラプロックスは1954年、スイス創業のグローバル企業クラデンAG社が開発しました。</div>
+              <!-- btn -->
+              <div class="front__about-btn btn__wrap">
+                <a href="./about.html" class="btn btn--orange btn--radius">
+                  <span>詳しくはこちら</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- front product -->
+      <section class="front__product">
+        <h1 class="h1 front__h1">PRODUCT</h1>
+        <div class="front__product-inner">
+          <div class="front__product-items">
+            <a href="./toothbrush.html">
+              <div class="front__product-img-wrap"><div class="front__product-img"><img decoding="async" src="img/quickguide-cs5460-600x600-web.png" alt=""><div class="circle"></div></div></div>
+              <div class="front__product-txt">TOOTHBRUSH</div>
+            </a>
+          </div>
+          <div class="front__product-items">
+            <a href="./Interdental.html">
+              <div class="front__product-img-wrap"><div class="front__product-img"><img decoding="async" src="img/quickguide-cps-600x600-web.png" alt=""><div class="circle"></div></div></div>
+              <div class="front__product-txt">INTERDENTAL</div>
+            </a>
+          </div>
+          <div class="front__product-items">
+            <a href="./sonic.html">
+              <div class="front__product-img-wrap"><div class="front__product-img"><img decoding="async" src="img/quickguide-hydrosonic-biw-600x600-web.png" alt=""><div class="circle"></div></div></div>
+              <div class="front__product-txt">SONIC</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- front how to -->
+      <section class="front__howto">
+        <!-- contents -->
+        <div class="front__howto-container">
+          <h1 class="h1 front__h1">HOW TO</h1>
+          <div class="front__howto-wrap">
+            <div class="front__howto-contents">
+              <div class="front__howto-img">
+                <video src="mov/howto-brushes.mp4" poster="img/thumbnail-brush02.jpg"  controls muted></video>
+              </div>
+              <div class="front__howto-txt">TOOTHBRUSH</div>
+            </div>
+            <div class="front__howto-contents">
+            
+            <div class="front__howto-img">
+              <video src="mov/howto-interdental.mp4" poster="img/thumbnail-idb.jpg" controls muted></video>
+            </div>
+            <div class="front__howto-txt">INTERDENTAL</div>
+            </div>
+          </div>  
+        </div>
+          <!-- btn -->
+          <div class="front__howto-btn">
+            <a href="./howto.html" class="btn btn--orange btn--radius">
+              <span>and more...</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------------------------------------------ -->
+    <!-- footer -->
+    <footer class="footer top__footer" id="footer">
+    <div class="footer__inner">
+      <nav class="footer__nav nav">
+        <ul class="fnav__items fnav-items">
+          <li class="fnav-items__item">
+            <a href="./front-page.html" class="en">HOME</a>
+            <p class="ja">ホーム</p>
+          </li>
+          <li class="fnav-items__item">
+            <a href="./about.html" class="en">What's CRAPROX?</a>
+            <p class="ja">クラプロックスとは？</p>
+          </li>
+          <li class="fnav-items__item">
+            <a href="./toothbrush.html" class="en">TOOTHBRUSH</a>
+            <p class="ja">歯ブラシ</p>
+          </li>
+          <li class="fnav-items__item">
+            <a href="./Interdental.html" class="en">INTERDENTAL</a>
+            <p class="ja">歯間ブラシ</p>
+          </li>
+          <li class="fnav-items__item">
+            <a href="./sonic.html" class="en">SONIC TOOTHBRUSH</a>
+            <p class="ja">電動歯ブラシ</p>
+          </li>
+          <li class="fnav-items__item">
+            <a href="./howto.html" class="en">HOW TO</a>
+            <p class="ja">使い方動画</p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pre__footer pre__header">
+      <small>&#169; CURADEN</small>
+    </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+<script src="test.js"></script>
+</body>
+</html>

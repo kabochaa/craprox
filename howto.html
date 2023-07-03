@@ -5,19 +5,13 @@
 <title>CRAPROX</title>
 <meta name="description"  content="">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 <link rel="stylesheet" href="css/reset.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css"> -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-5/css/6-1-5.css"> -->
-<!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-6/css/6-6.css"> -->
-<link rel="stylesheet" href="css/testtest.css">
-
-  <!-- <link rel="stylesheet" href="css/front-page.css"> -->
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="css/howto.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/front-page.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/howto.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
@@ -26,7 +20,7 @@
 <body>
   <div id="container">
     <!-- header -->
-    <header class="header">
+    <header id="js-fixed-header" class="header">
       <div class="header__inner">
         <h1 class="header__title header-title">
           <a href="./front-page.html">
@@ -38,27 +32,27 @@
           <ul class="nav__items nav-items">
             <li class="nav-items__item">
               <a href="./front-page.html" class="en">HOME</a>
-              <a href="./front-page.html" class="ja">ホーム</a>
+              <p class="ja">ホーム</p>
             </li>
             <li class="nav-items__item">
               <a href="./about.html" class="en">What's CRAPROX?</a>
-              <a href="./about.html" class="ja">クラプロックスとは？</a>
+              <p class="ja">クラプロックスとは？</p>
             </li>
             <li class="nav-items__item">
               <a href="./toothbrush.html" class="en">TOOTHBRUSH</a>
-              <a href="./toothbrush.html" class="ja">歯ブラシ</a>
+              <p class="ja">歯ブラシ</p>
             </li>
             <li class="nav-items__item">
               <a href="./Interdental.html" class="en">INTERDENTAL</a>
-              <a href="./Interdental.html" class="ja">歯間ブラシ</a>
+              <p class="ja">歯間ブラシ</p>
             </li>
             <li class="nav-items__item">
               <a href="./sonic.html" class="en">SONIC TOOTHBRUSH</a>
-              <a href="./sonic.html" class="ja">電動歯ブラシ</a>
+              <p class="ja">電動歯ブラシ</p>
             </li>
             <li class="nav-items__item">
               <a href="./howto.html" class="en">HOW TO</a>
-              <a href="./howto.html" class="ja">使い方動画</a>
+              <p class="ja">使い方動画</p>
             </li>
           </ul>
         </nav>
@@ -73,6 +67,8 @@
     <!-- ------------------------------------------------------ -->
 
     <!-- how to -->
+    <p id="page-top"><a href="#"><span>Page Top</span></a></p>
+
     <div class="howto__container">
       <!-- how to brush -->
       <section class="howto__sonic howto__wrap">
@@ -123,28 +119,45 @@
     </div>
 
 <!-- ------------------------------------------------------ -->
-
-<!-- <?php get_footer(); ?> -->
-
-  <!-- footer -->
-  <footer class="footer" id="footer">
-    <div class="footer__inner">
-      <nav class="footer__nav nav">
-        <ul>
-          <li ><a href="./front-page.html">HOME</a></li>
-          <li><a href="./about.html">クラプロックスとは？</a></li>
-          <li><a href="./toothbrush.html">歯ブラシ</a></li>
-          <li><a href="./Interdental.html">歯間ブラシ</a></li>
-          <li><a href="./sonic.html">電動歯ブラシ</a></li>
-          <li><a href="./howto.html">使い方動画</a></li>
-        </ul>
-      </nav>
-      <div class="pre__footer pre__header">
-        <small>&#169; CURADEN</small>
-      </div>
-    </div>
-  </footer>
+<!-- footer -->
+<footer class="footer" id="footer">
+  <div class="footer__inner">
+    <nav class="footer__nav nav">
+      <ul class="fnav__items fnav-items">
+        <li class="fnav-items__item">
+          <a href="./front-page.html" class="en">HOME</a>
+          <p class="ja">ホーム</p>
+        </li>
+        <li class="fnav-items__item">
+          <a href="./about.html" class="en">What's CRAPROX?</a>
+          <p class="ja">クラプロックスとは？</p>
+        </li>
+        <li class="fnav-items__item">
+          <a href="./toothbrush.html" class="en">TOOTHBRUSH</a>
+          <p class="ja">歯ブラシ</p>
+        </li>
+        <li class="fnav-items__item">
+          <a href="./Interdental.html" class="en">INTERDENTAL</a>
+          <p class="ja">歯間ブラシ</p>
+        </li>
+        <li class="fnav-items__item">
+          <a href="./sonic.html" class="en">SONIC TOOTHBRUSH</a>
+          <p class="ja">電動歯ブラシ</p>
+        </li>
+        <li class="fnav-items__item">
+          <a href="./howto.html" class="en">HOW TO</a>
+          <p class="ja">使い方動画</p>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <script src="index.js"></script>
+  <div class="pre__footer pre__header">
+    <small>&#169; CURADEN</small>
+  </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+<script src="test.js"></script>
 </body>
 </html>
