@@ -1,5 +1,12 @@
 /* brush */
 /* product top */
+.brush__container,
+.idb__container,
+.sonic__container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
 .product__top {
   width: 100%;
   background-color: #dddddd92;
@@ -16,14 +23,20 @@
   object-fit: cover;
 }
 
+.product__top-wrap h2 {
+  font-size: 3em;
+  color: #003da5;
+}
+
 .product__top-wrap div {
+  font-size: 1.5em;
   margin-top: 1em;
 }
 
 @media screen and (min-width:960px) {
   .product__top {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr 2fr 1fr;
     place-items: center;
   }
 }
@@ -47,7 +60,7 @@
 .product__h1 {
   text-align: center;
   font-size: 3em;
-  margin: .5em;
+  margin: 1em;
 }
 
 .feature__inner {

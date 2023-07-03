@@ -1,3 +1,8 @@
+.howto__container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
 .howto__h1 {
   font-size: 3em;
   margin: .5em;
@@ -38,6 +43,7 @@
   margin: 1em;
   font-size: 1.5em;
   font-weight: 600;
+  color: #003da5;
 }
 
 @media screen and (min-width:960px) {
