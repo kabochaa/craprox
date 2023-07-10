@@ -24,8 +24,14 @@
 .video__wrap {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 10px 5px #dadada;
+  box-shadow: 0 0 10px 3px #dadada;
   margin: 0 auto;
+}
+
+.video__wrap:hover {
+  background-color: #fff1a2;
+  box-shadow: 5px 5px 20px 10px #dadada;
+  transition: all .3s;
 }
 
 .howto__video {

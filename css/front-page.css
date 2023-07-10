@@ -212,7 +212,7 @@ a.btn--radius {
   }
 
   .header__nav a {
-    margin: 0 .3em;
+    margin-right: 1em;
   }
 }
 
@@ -247,7 +247,6 @@ a.btn--radius {
   width: 100%;
   display: block;
   text-align: center;
-  margin-bottom: 24px;
 }
 
 a.en {
@@ -538,7 +537,7 @@ a.en {
 @media screen and (min-width:960px) {
 
   .front__product-items:hover {
-    background-color: #ffddf7;
+    background-color: #a6edfa;
     box-shadow: 0 0 10px 3px #ababab;
     transition: all .2s;
   }
@@ -546,9 +545,7 @@ a.en {
   .front__howto-contents:hover {
     box-shadow: 0 0 10px 5px #ababab;
     transition: all .3s;
-    /* background-color: #f9eacb; */
-    /* background-color: #f9eccb; */
-    background-color: #ffddf7;
+    background-color: #fcec93;
   }
 }
 
@@ -594,7 +591,6 @@ a.en {
 
 .front__howto {
   background-color: #fdfaea;
-
 }
 
 .front__howto-container h1 {
@@ -604,6 +600,7 @@ a.en {
 .front__howto-contents {
   background-color: #fff;
   padding: 2em 2em 0 2em;
+  border-radius: 20px;
 }
 
 .front__howto-wrap {

@@ -84,7 +84,6 @@
 
 .about__compare-h1-wrap h1,
 .about__feature-h1-wrap h1 {
-  /* display: inline-block; */
   border-bottom: .1em solid #003da5;
 }
 
